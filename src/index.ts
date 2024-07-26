@@ -39,4 +39,4 @@ app.get('/protected',(req:Request,res:Response) => {
     res.send(req.user)
 })
 
-app.listen(port,() => console.log('server started'))
+app.listen(port,() => console.log(`server is up at http://localhost:${port}`))
